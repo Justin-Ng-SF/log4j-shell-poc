@@ -61,7 +61,7 @@ public class Exploit {
         p.write_text(program)
         subprocess.run([os.path.join(CUR_FOLDER, "jdk1.8.0_20/bin/javac"), str(p)])
     except OSError as e:
-        print(Fore.RED + f'[-] Something went wrong {e}')
+        print(Fore.RED + f'[-] Something went wrong')
         raise e
     else:
         print(Fore.GREEN + '[+] Exploit java class created success')
